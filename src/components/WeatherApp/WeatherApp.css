@@ -9,9 +9,7 @@
     border-radius: 16px;
     background:rgba(255, 255, 255, 0.164) ;
     box-shadow: 0 4px 30px rgba(0,0,0,1);
-    /* color: transparent; */
     opacity: 0.9;
-    /* border: 1px solid transparent; */
     background:url("https://www.wallpaperflare.com/static/502/695/746/blue-sky-bright-clouds-countryside-wallpaper.jpg") ;
     background-size: cover;
     background-repeat: no-repeat;
@@ -108,4 +106,36 @@ margin-bottom:8px;
 }
 .text{
     font-size: 20px;
+}
+
+/* Media Queries for Responsive Design */
+
+@media only screen and (max-width: 600px) {
+    .container {
+        max-width:400px;
+        width: auto;
+        padding: 15px;
+        
+    }
+    .top-bar{
+        width: auto;
+    }
+    .top-bar input{
+       max-width: 270px;
+    }
+
+    .weather-temp {
+        font-size: 60px;
+    }
+
+    .weather-location {
+        font-size: 30px;
+    }
+
+    .data-container {
+        gap:22px;
+        flex-direction: column;
+        align-items:flex-start;
+        justify-content: center;
+    }
 }
